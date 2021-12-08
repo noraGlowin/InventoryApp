@@ -1,11 +1,10 @@
-package com.example.inventory
+package com.example.inventory.data
 
-import Item
+import com.example.inventory.data.Item
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.inventory.data.ItemDao
 
 @Database(entities = [Item::class], version = 1, exportSchema = false)
 abstract class ItemRoomDatabase : RoomDatabase() {
